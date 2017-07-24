@@ -1,0 +1,423 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Holbi</title>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/app.css">
+	<link rel="icon" href="img/favicon.ico">
+	<!-- <link rel="icon" href="img/favicon.ico" type="image/x-icon"> -->
+	<link rel="apple-touch-icon-precomposed" href="apple-touch-icon.png">
+	<link href="https://fonts.googleapis.com/css?family=PT+Serif:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+</head>
+<body>
+
+	<header class="hb-header">
+		<div class="row top-bar row-flex">
+			<!-- start header logo block -->
+			<div class="column-flex hb-header-logo">
+				<h1 class="hb-logo ">
+					<a href="#" class="hb-logo__link">
+						Holbi
+					</a>
+				</h1>
+			</div>
+			<!-- end header logo block -->
+
+			<!-- start header info block -->
+			<div class="column-flex hb-header-info">
+				<div class="hb-header-info__top ">
+					<div class="hb-header-info-item hb-form-search">
+						<form action="" class="hb-search">
+							<input type="search" class="hb-search__input" placeholder="Search for...">
+							<button class="hb-search__button"><i class="fa fa-search" aria-hidden="true"></i></button>
+						</form>
+					</div>
+
+					<div class="hb-user hb-header-info-item dropdown">
+						<a href="#" class="hb-user__link">
+							<i class="fa fa-user" aria-hidden="true"></i>
+							<span>My Account</span>
+						</a>
+						<ul class="hb-user-menu submenu hidden" id="hb-user-menu">
+							<li><a href="#">My info</a></li>
+							<li><a href="#">My cart</a></li>
+							<li><a href="#">My wish list</a> </li>
+							<li><a href="#">Log out</a></li>
+						</ul>
+					</div>
+					
+					<div class="hb-lang hb-header-info-item dropdown ">
+						<a href="#" class="hb-lang__link" id="english">
+							<img src="img/eng.jpg" alt="english language">
+						</a>
+						<ul class="hb-lang-menu submenu">
+							<li>
+								<a href="#" id="english">
+									<img src="img/eng.jpg" alt="english language">
+									eng
+								</a>
+							</li>
+							<li>
+								<a href="#" id="ukraine">
+									<img src="img/ukraine.png" alt="ukraine language">
+									ukr
+								</a>
+							</li>
+						</ul>
+
+					</div>
+
+					<div class="hb-currency hb-header-info-item dropdown">
+						<a href="#" class="hb-currency__link" id="gbp">
+							<i class="fa fa-gbp" aria-hidden="true"></i>
+							GBP
+						</a>
+						<ul class="hb-currency-menu submenu">
+							<li>
+								<a href="#" class="hb-currency__link" id="gbp">
+									<i class="fa fa-gbp" aria-hidden="true"></i>
+									GBP
+								</a>
+							</li>
+							<li>
+								<a href="#" class="hb-currency__link" id="usd">
+									<i class="fa fa-usd" aria-hidden="true"></i>
+									USD
+								</a>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+
+				<div class="hb-header-contact">
+					<div class="hb-header-contact__item hb-contact">
+						<i class="fa fa-phone hb-contact__icon" aria-hidden="true"></i>
+						<p class="hb-contact__title">Sales Office</p>
+						<p class="hb-contact__chanel">0800 011 2569</p>
+					</div>
+					<div class="hb-header-contact__item hb-contact">
+						<i class="fa fa-fax hb-contact__icon" aria-hidden="true"></i>
+						<p class="hb-contact__title">Fax us</p>
+						<p class="hb-contact__chanel">0870 3836587</p>
+					</div>
+					<div class="hb-header-contact__item hb-contact">
+						<i class="fa fa-envelope-o hb-contact__icon" aria-hidden="true"></i>
+						<p class="hb-contact__title">Email us</p>
+						<p class="hb-contact__chanel">
+							<a href="mailto:info@holbi.co.uk">info(at)holbi.co.uk</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<!-- end header info block -->
+
+			<!-- start hamburger menu -->
+			<div class="hamburger">
+				<a href="#" class="menu-toggle" id="menu-toggle"> <span></span></a>
+			</div>
+			<!-- end hamburger menu -->
+
+			<!-- start header cart block -->
+			<div class="column-flex hb-header-cart hb-cart">
+				<i class="fa fa-shopping-cart fa-2x hb-cart__icon" aria-hidden="true"></i>
+				<span class="hb-cart__count" id="product-count">0</span>
+				<a href="#" class="hb-cart__link">Checkout <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+			</div>
+			<!-- end header cart block -->
+			
+		</div>
+		<div class="bottom-bar">
+			<div class="row hb-header-menu">
+				<nav>
+					<ul class="hb-menu">
+						<li class="hb-menu__item"><a href="#1"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+						<li class="hb-menu__item dropdown">
+							<a href="#2">Catalogue</a>
+							<ul class="hb-menu submenu">
+								<li class="submenu__item"><a href="#">Men</a></li>
+								<li class="submenu__item"><a href="#">Women</a></li>
+								<li class="submenu__item"><a href="#">Children</a></li>
+								<li class="submenu__item"><a href="#">Sale</a></li>
+							</ul>
+						</li>
+						<li class="hb-menu__item dropdown">
+							<a href="#3">Recommends</a>
+							<ul class="hb-menu submenu">
+								<li class="submenu__item"><a href="#">Premium</a></li>
+								<li class="submenu__item"><a href="#">Sport</a></li>
+								<li class="submenu__item"><a href="#">Smart Watch</a></li>
+							</ul>
+						</li>
+						<li class="hb-menu__item"><a href="#4">Blog</a></li>
+						<li class="hb-menu__item dropdown">
+							<a href="#5">About</a>
+							<ul class="hb-menu submenu">
+								<li class="submenu__item"><a href="#">Wholesale</a></li>
+								<li class="submenu__item"><a href="#">Contacts</a></li>
+								<li class="submenu__item"><a href="#">Vacancies</a></li>
+							</ul>
+						</li>
+						<li class="hb-menu__item dropdown">
+							<a href="#6">Help</a>
+							<ul class="hb-menu submenu">
+								<li class="submenu__item"><a href="#">Payment</a></li>
+								<li class="submenu__item"><a href="#">Guarantee</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	</header>
+
+	<main>
+		<div class="row">
+			<section class="hb-offers">
+				<div class="hb-offer">
+					<a href="#" class="hb-offer__link">
+						<img src="img/baner-save.png" class="hb-offer__img" alt="10% Off on all titles">
+						<h2 class="hb-offer__title"> <span>10% Off</span> on all titles </h2>
+					</a>
+				</div>
+				<div class="hb-offer">
+					<a href="#" class="hb-offer__link">
+						<img src="img/baner-del.png" class="hb-offer__img" alt="Free Delivery on orders over £20">
+						<h2 class="hb-offer__title hb-offer__title_small"> <span>Free Delivery</span> on orders over £20 </h2>
+					</a>
+				</div>
+			</section>
+
+			<div class="hb-separate">
+				<!-- <div class="hb-separate__line"></div> -->
+				<img src="img/separate.png.png" class="hb-separate__img" alt="">
+			</div>
+
+			<section class="hb-shop">
+
+				<h2 class="hb-shop__title">Featured products</h2>
+				<div class="hb-products">
+					<div class="hb-product">
+						<div class="hb-product__img">
+							<img src="img/product-1.jpg" alt="">
+						</div>
+						<div class="hb-product-info">
+							<h1 class="hb-product-info__title">
+								<a href="#">Casio Baby-G BG169G-7B Face Protector </a>
+							</h1>
+							<p class="hb-product-info__description">
+								This Baby-G BLX from the Tide Graph series allows for maximum fun and function in the w...
+							</p>
+							<p class="hb-product-info__stock" id="stock">
+								<span class="stock-check" data-stock="true"></span>
+								In stock
+							</p>
+							<div class="hb-product-info__price clearfix">
+								<div class="hb-product-price float-left">
+									<span class="hb-product-price__title">Your price: </span>
+									<span class="hb-product-price__value">£13.49 </span>
+								</div>
+								<div class="hb-product-price hb-product-price_black float-right">
+									<span class="hb-product-price__title">RRP:</span>
+									<span class="hb-product-price__value">£14.99 </span>
+								</div>
+							</div>
+
+							<div class="hb-product-info__link">
+								<a href="#" class="clearfix">
+									<span class="float-left">More Info</span>
+									<i class="fa fa-arrow-right float-right" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="hb-product-info__purchase clearfix">
+								<form action="post" class="hb-purchase clearfix" name="purchase" id="form-purchase">
+									<div class="hb-purchase__input float-left">
+										<button class="hb-purchase__button hb-purchase__button_disabled button" id="decrement" disabled>-</button>
+										<input type="text" class="hb-purchase__count" id="purchase-count" value="1">
+										<a class="hb-purchase__button button" name="plus">+</a>
+									</div>
+
+									<div class="hb-purchase__submit float-right">
+										<button type="submit" class="button">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											Buy now
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="hb-product">
+						<div class="hb-product__img">
+							<img src="img/product-2.png" alt="">
+						</div>
+
+						<div class="hb-product-info">
+							<h1 class="hb-product-info__title">
+								<a href="#">CONCORD LA SCALA STEEL WATCH</a>
+							</h1>
+							<p class="hb-product-info__description">
+								She also liked to shut up! Morbo can't understand his teleprompter because he 
+								forgot how you say that letter that's shaped like a man wearing a hat. 
+							</p>
+							<p class="hb-product-info__stock" id="stock">
+								<span class="stock-check" data-stock="true"></span>
+								In stock
+							</p>
+							<div class="hb-product-info__price clearfix">
+								<div class="hb-product-price float-left">
+									<span class="hb-product-price__title">Your price: </span>
+									<span class="hb-product-price__value">£13.49 </span>
+								</div>
+								<div class="hb-product-price hb-product-price_black float-right">
+									<span class="hb-product-price__title">RRP:</span>
+									<span class="hb-product-price__value">£14.99 </span>
+								</div>
+							</div>
+
+							<div class="hb-product-info__link">
+								<a href="#" class="clearfix">
+									<span class="float-left">More Info</span>
+									<i class="fa fa-arrow-right float-right" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="hb-product-info__purchase clearfix">
+								<form action="post" class="hb-purchase clearfix" name="purchase" id="form-purchase">
+									<div class="hb-purchase__input float-left">
+										<a href="#" class="hb-purchase__button hb-purchase__button_disabled button" name="minus">-</a>
+										<input type="text" class="hb-purchase__count" id="purchase-count" value="1">
+										<a class="hb-purchase__button button" name="plus">+</a>
+									</div>
+
+									<div class="hb-purchase__submit float-right">
+										<button type="submit" class="button">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											Buy now
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="hb-product">
+						<div class="hb-product__img">
+							<img src="img/product-3.png" alt="">
+						</div>
+
+						<div class="hb-product-info">
+							<h1 class="hb-product-info__title">
+								<a href="#">CONCORD WOMEN'S 'LA SCALA' </a>
+							</h1>
+							<p class="hb-product-info__description">
+								In our darkest hour, we can stand erect, with proud upthrust bosoms. That's not soon enough! 
+								Soon enough. I suppose I could part with 'one' and still be feared…
+							</p>
+							<p class="hb-product-info__stock" id="stock">
+								<span class="stock-check" data-stock="true"></span>
+								In stock
+							</p>
+							<div class="hb-product-info__price clearfix">
+								<div class="hb-product-price float-left">
+									<span class="hb-product-price__title">Your price: </span>
+									<span class="hb-product-price__value">£250.69 </span>
+								</div>
+								<div class="hb-product-price hb-product-price_black float-right">
+									<span class="hb-product-price__title">RRP:</span>
+									<span class="hb-product-price__value">£260.99 </span>
+								</div>
+							</div>
+
+							<div class="hb-product-info__link">
+								<a href="#" class="clearfix">
+									<span class="float-left">More Info</span>
+									<i class="fa fa-arrow-right float-right" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="hb-product-info__purchase clearfix">
+								<form action="post" class="hb-purchase clearfix" name="purchase" id="form-purchase">
+									<div class="hb-purchase__input float-left">
+										<a href="#" class="hb-purchase__button hb-purchase__button_disabled button" name="minus">-</a>
+										<input type="text" class="hb-purchase__count" id="purchase-count" value="1">
+										<a class="hb-purchase__button button" name="plus">+</a>
+									</div>
+
+									<div class="hb-purchase__submit float-right">
+										<button type="submit" class="button">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											Buy now
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="hb-product">
+						<div class="hb-product__img">
+							<img src="img/product-4.png" alt="">
+						</div>
+
+						<div class="hb-product-info">
+							<h1 class="hb-product-info__title">
+								<a href="#">DKNY WOMEN'S NY2146 SOHO </a>
+							</h1>
+							<p class="hb-product-info__description">
+								You guys realize you live in a sewer, right? I daresay that Fry has discovered
+								the smelliest object in the known universe! Eeeee! Now say "nuclear wessels"! 
+							</p>
+							<p class="hb-product-info__stock" id="stock">
+								<span class="stock-check" data-stock="true"></span>
+								In stock
+							</p>
+							<div class="hb-product-info__price clearfix">
+								<div class="hb-product-price float-left">
+									<span class="hb-product-price__title">Your price: </span>
+									<span class="hb-product-price__value">£134.35 </span>
+								</div>
+								<div class="hb-product-price hb-product-price_black float-right">
+									<span class="hb-product-price__title">RRP:</span>
+									<span class="hb-product-price__value">£160.50 </span>
+								</div>
+							</div>
+
+							<div class="hb-product-info__link">
+								<a href="#" class="clearfix">
+									<span class="float-left">More Info</span>
+									<i class="fa fa-arrow-right float-right" aria-hidden="true"></i>
+								</a>
+							</div>
+							<div class="hb-product-info__purchase clearfix">
+								<form action="post" class="hb-purchase clearfix" name="purchase" id="form-purchase">
+									<div class="hb-purchase__input float-left">
+										<a href="#" class="hb-purchase__button hb-purchase__button_disabled button" name="minus">-</a>
+										<input type="text" class="hb-purchase__count" id="purchase-count" value="1">
+										<a class="hb-purchase__button button" name="plus">+</a>
+									</div>
+
+									<div class="hb-purchase__submit float-right">
+										<button type="submit" class="button">
+											<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+											Buy now
+										</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+</main>
+<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
