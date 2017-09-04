@@ -350,17 +350,15 @@ a{
 		margin-left: 5px;
 	}
 	&__link{
-		display: block;
-		overflow: hidden;
+		display: flex;
+		
 	}
 	&__title{
 		display: inline-block;
-		line-height: 73px;
-		margin: 0;
+		margin: auto;
 		color: #df2e2e;
-		font-size: 35px;
+		font-size: calc( 100vw / 100 *2 );
 		font-weight: 400;
-		transform: translateY(-27px);
 		span{
 			font-family: "PT Serif";
 			font-style: italic;
@@ -570,7 +568,7 @@ a{
 	}
 
 	.hb-header{
-		margin-bottom: 21px;
+		margin-bottom: 5px;
 		.row-flex{
 			display: flex;
 			-webkit-flex-wrap: wrap;
@@ -645,6 +643,7 @@ a{
 		transition:transform .3s ease-in;
 		transform:translateX(300px);
 		overflow: hidden;
+		position: fixed;
 		.menu-toggle {
 			span {
 				background-color: transparent;
@@ -684,6 +683,11 @@ a{
 		}
 	}
 
+	.submenu{
+		position: absolute;
+		left: -100%;
+	}
+
 	.hb-offers{
 		-webkit-flex-direction: column;
 		-ms-flex-direction: column;
@@ -703,7 +707,7 @@ a{
 
 	.hb-offer{
 		&__title{
-			font-size: 25px;
+			font-size: calc( 100vw / 100 *4);
 			&_small{
 				font-size: 20px;
 			}
@@ -750,6 +754,18 @@ a{
 	}
 	.hb-user, .hb-lang, .hb-currency{
 		display: block;
+	}
+	.hb-cart{
+		padding: 16px 10px;
+		&__icon{
+			padding-right: 5px;
+		}
+		&__link .fa{
+			padding-left: 0;
+		}
+	}
+	.hamburger{
+		position: absolute;
 	}
 	.hb-offer{
 		&__img{
